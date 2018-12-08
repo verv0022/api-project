@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Fira Sans', 'Helvetica', 'Arial', sans-serif;
+
+    background-image: linear-gradient(to right, teal, pink);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Merriweather', 'Times', 'Times New Roman', serif;
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:3rem;
+}
+
+.attribution {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: auto;
+    margin: 1rem;
+    padding-top: 1rem
+}
+
+#search-input {
+
+    display: block;
+    width: 30rem;
+    height: 40px;
+    font-size: 30px;
+    border: solid 2px black;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, teal, lightgreen);
+    margin-top: 4rem;
+    padding: 0 12px;
+    transition: width 1s;
+}
+
+#search-input:hover {
+    box-shadow: 2px 2px 6px pink;
+  
+}
+
+#search-input:focus {
+    box-shadow: 2px 2px 6px pink;
+    width: 40rem;
+    right:0;
+    
+
+}
+
+#search-button {
+    
+    margin-left: 1rem;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+
+#search-button:active{
+    
+}
+
+#back-button {
+    cursor: pointer;
+    font-size: 40px;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+
+
+
+#filter-button {
+    cursor: pointer;
+    align-content: right;
+    font-size: 40px;
+    margin-left: 1rem;
+    margin-top: 4rem;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0rem 8rem 0;
+}
+
+.page {
+    display: none;
+
+
+}
+
+.active {
+    display: block;
+
+}
+
+
+.iconic-property-stroke,
+.iconic-property-fill {
+    fill: black;
+    stroke: violet;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.movieCard {
+
+    width: 50rem;
+    height: auto;
+    margin: 1rem auto;
+    background-image: linear-gradient(to left, lightgreen, teal);
+    color: black;
+    border-left: solid 6px lightgreen;
+    border-top: solid 6px lightgreen;
+    border-bottom: solid 6px teal;
+    border-right: solid 6px teal;
+}
+
+.movieCard:hover {
+    cursor: pointer;
+    box-shadow: 0 0 75px white;
+    transform: scale(1.1, 1.1);
+
+}
+
+.imageSection {
+    float: left;
+    width: 12rem;
+    height: 17rem;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+/*select only the images that are direct descendants of .imageSection*/
+.imageSection > img {
+    height: 17rem;
+    margin-right: 1rem;
+}
+
+
+
+
